@@ -1,0 +1,9 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX opmo: <http://openprovenance.org/model/opmo#>
+PREFIX opmv: <http://purl.org/net/opmv/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?sub ?pred ?obj WHERE {
+  ?sub ?pred ?obj .
+  ?sub a opmv:Artifact .
+}
